@@ -1,8 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    body {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    .hero-image {
+        object-fit: cover;
+        border-radius: 8px;
+    }
+</style>
+
+<div class="container d-flex align-items-center justify-content-center min-vh-100">
+    <div class="card shadow-lg border-0 p-4 mx-auto"">
+        <div class="card-body text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/7312/7312374.png" alt="Imagen representativa de gestión de direcciones" class="img-fluid mb-4 hero-image" style="width: 200px;">
+            <h1 class="card-title mb-3">Catálogo de Direcciones</h1>
+            <p class="card-text text-muted mb-4">
+                Los usuarios pueden consultar el catálogo completo de direcciones y modificar datos específicos de ubicación,
+                incluyendo ciudad y estado/provincia, mediante listas desplegables dinámicas que se alimentan de la información existente.
+            </p>
+            <div class="text-muted mb-4 small">
+                <strong>Características principales:</strong>
+                <ul class="list-unstyled">
+                    <li>✓ Visualización completa del catálogo de direcciones</li>
+                    <li>✓ Edición simplificada de ciudad y estado/provincia</li>
+                    <li>✓ Seguimiento de actualizaciones con registro de fecha</li>
+                </ul>
+            </div>
+            <a href="/address" class="btn btn-primary btn-lg px-4">
+                Acceder al Catálogo
+            </a>
+        </div>
+    </div>
 </div>
